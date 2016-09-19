@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>:: Pl)w ::</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Vegas CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/jquery.vegas.min.css" />
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">:: Pl)w ::</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Create<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#" role="button" id="btnCreateDoctor">Doctor</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" role="button" id="btnCreateClinic">Clinic</a>
+                                    </li>
+                                    <li><a href="#" role="button" id="btnCreateBase">Army base</a>
+                                    </li>
+                                    <li><a href="#" role="button" id="btnCreatePlane">Airplane</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div id="wdwSimulation" class="container">
+                                <button class="btn btn-success btn-lg" id="btnStart">Start</button>
+                                <button class="btn btn-warning btn-lg" id="btnSave">Save</button>
+                                <button class="btn btn-warning btn-lg" id="btnLoad">Load</button>
+                                <button id="btnHelp" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#helpModal" data-whatever="@mdo">Help</button>
+                            </div>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" role="button" id="btnLogout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <div id="wrapper">
+                <!-- Page Content -->
+                <div id="page-content-wrapper">
+                    <div id="frontpage" class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-md-offset-2">
+                                <div class="thumbnail">
+                                    <img src="images/bacteria.jpg">
+                                    <div class="caption">
+                                        <center>
+                                        <h3>Information</h3>
+                                        </center>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus, tellus ac consectetur cursus, odio nisi lacinia est, sit amet sollicitudin orci massa scelerisque eros. Curabitur orci sem, efficitur ut enim interdum, sodales bibendum magna. Nulla at velit vitae tellus fringilla fermentum. Quisque ac ullamcorper erat. Pellentesque quis rhoncus libero. Ut id turpis nulla. Nulla eu nisl in turpis sollicitudin lacinia nec quis augue.</p>
+                                        <p>Morbi magna mauris, ultricies sit amet nisi in, pretium dictum sapien. Fusce scelerisque, tellus ut maximus sagittis, metus mauris consectetur arcu, eget euismod metus velit sit amet turpis. In hac habitasse platea dictumst. Morbi dignissim neque vitae pharetra vulputate. Duis eu dignissim urna. Duis feugiat tincidunt semper. Vivamus ex lacus, pretium eu mollis vel, efficitur a nunc. Nam interdum et nibh sit amet pellentesque. Ut vitae velit id tellus efficitur dapibus vehicula in odio. Fusce vel enim risus. Donec volutpat sed orci sit amet blandit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <center>
+                                        <h3><b>Sign Up</b></h3>
+                                        <form class="cmxform form-inline" id="commentForm" method="get" action="">
+                                            <div class="form-group">
+                                                <label for="txtFirstName">First Name</label>
+                                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                                <br>
+                                                <input id="txtFirstName" type="text" class="form-control" name="firstName" placeholder="Tom">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group">
+                                                <label for="txtLastName">Last Name</label>
+                                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                                <br>
+                                                <input id="txtLastName" type="text" class="form-control" name="lastName" placeholder="Smith">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group">
+                                                <!-- <p id="lblEmailMessage">E-mail Eg: abc@abc.com</p> -->
+                                                <label for="txtEmail">Email</label>
+                                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                                <br>
+                                                <input id="txtEmail" type="email" class="form-control" name="email" placeholder="tom.smith@example.com">
+                                                <p id="sameEmailMessage"></p>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group">
+                                                <label for="txtPassword">Password</label>
+                                                <span class="glyphicon glyphicon-lock"></span>
+                                                <br>
+                                                <input id="txtPassword" type="password" class="form-control" name="password" placeholder="Password">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="form-group">
+                                                <label for="txtRepeatPassword">Repeat Password</label>
+                                                <span class="glyphicon glyphicon-lock"></span>
+                                                <br>
+                                                <input id="txtRepeatPassword" type="password" class="form-control" name="repeat_password" placeholder="Repeat Password">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <p>
+                                            <button id="btnSignup" type="button" class="btn btn-primary btn-lg">Sign Up</button>
+                                            <button id="btnLogin" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Login</button>
+                                            </p>
+                                        </form>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="cmxform" id="modalForm" method="get" action="">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="exampleModalLabel">Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="txtLoginEmail" class="control-label">E-mail</label>
+                                                <input type="email" class="form-control" id="txtLoginEmail" name="login_email" value="dan@dan.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtLoginPassword" class="control-label">Password</label>
+                                                <input type="password" class="form-control" id="txtLoginPassword" value="dandan">
+                                                <p id="wrongLogin"></p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button id="btnLoginModal" type="button" class="btn btn-primary btn-lg btn-block">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span>Login</button>
+                                        <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="txtLegend" class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <!-- Table -->
+                        <table class="table">
+                            <tr>
+                                <th>#</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="healthyLeg"></div>
+                                </td>
+                                <td>Healthy Person</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="doctorLeg"></div>
+                                </td>
+                                <td>Doctor</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="sickLeg"></div>
+                                </td>
+                                <td>Sick Person</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="immuneLeg"></div>
+                                </td>
+                                <td>Immune Person</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="deadLeg"></div>
+                                </td>
+                                <td>Dead Person</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <form class="cmxform" id="modalForm" method="get" action="">
+                        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="modalHelpLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="modalHelpLabel">FAQ</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <h5 class="helpQuestions">What is this?</h5>
+                                                <p>This is a simple virus simluation system, where you create 100 people and they infect/heal/shoot eachother.</p>
+                                            </div>
+                                            <h5 class="helpQuestions">How do you "simulate"?</h5>
+                                            <p>You hit the button <strong>START</strong> and population is created, then you can watch and enhance the game to your liking.</p>
+                                            <h5 class="helpQuestions">What else can you do?</h5>
+                                            <p>You can create a doctor, that moves around the map and heals infected people as well as couple of buildings, which you can move around the map.</p>
+                                            <h5 class="helpQuestions">What kind of buildings?</h5>
+                                            <p>Clinic, which makes infected people immune to further infection. Army base, which shoots infected people when in range and a helicopter, which grabs healthy people around and at specified amount inside, leaves the world =)</p>
+                                            <h5 class="helpQuestions">What else is there?</h5>
+                                            <p>You have simple legend, which person-color means what, as well as 2 graphs displaying infection rate and mortality rate.</p><p> - and ultimately you can save your progress and continue where you left.</p>
+                                            <h5 class="helpQuestions">What are the future plans?</h5>
+                                            <p>TBA</p>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="charts" class="panel panel-default">
+                        <div id="virus_chart"></div>
+                        <div>Virus Chart</div>
+                        <div id="mortality_chart"></div>
+                        <div>Mortality Chart</div>
+                    </div>
+                    <div id="mapmap"></div>
+                </div>
+                <!-- /#wrapper -->
+                <!-- jQuery JS -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                <!-- jQuery UI -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+                <!-- Bootstrap JS -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+                <!-- Custom JS -->
+                <script type="text/javascript" src="JS/jquery.vegas.min.js"></script>
+                <script type="text/javascript" src="JS/index.js"></script>
+                <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <!-- Validate -->
+                <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
+                <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>
+                <script type="text/javascript">
+                        $(function() {
+                            $.vegas({
+                                src: 'images/damap.png'
+                            });
+                            $.vegas('overlay', {
+                                src: 'overlays/07.png'
+                            });
+                        });
+                </script>
+                <script type="text/javascript">
+                    google.load("visualization", "1", {packages:["gauge"]});
+                    google.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Label', 'Value'],
+                            ['Infected', 0],
+                            ]);
+                        var options = {
+                            width: 400, height: 145,
+                            redFrom: 75, redTo: 100,
+                            yellowFrom:50, yellowTo: 75,
+                            minorTicks: 5
+                        };
+                        var chart = new google.visualization.Gauge(document.getElementById('virus_chart'));
+                        chart.draw(data, options);
+                        setInterval(function() {
+                            data.setValue(0, 1, iSickPeopleCounter);
+                            chart.draw(data, options);
+                        }, 1000);
+                    }
+                </script>
+                <script type="text/javascript">
+                    google.load("visualization", "1", {packages:["gauge"]});
+                    google.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Label', 'Value'],
+                            ['Dead', 0],
+                            ]);
+                        var options = {
+                            width: 400, height: 145,
+                            redFrom: 75, redTo: 100,
+                            yellowFrom:50, yellowTo: 75,
+                            minorTicks: 5
+                        };
+                        var chart = new google.visualization.Gauge(document.getElementById('mortality_chart'));
+                        chart.draw(data, options);
+                        setInterval(function() {
+                            data.setValue(0, 1, iDeadPeopleCounter);
+                            chart.draw(data, options);
+                        }, 1000);
+                    }
+                </script>
+            </body>
+        </html>

@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700);
+.thumbnail {
+    opacity: 0.9;
+    box-shadow: 10px 10px 10px #000000;
+}
+h3 {
+    font-family: 'Syncopate', sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+}
+.jumbotron {
+    height: 25vh;
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+.navbar {
+    display: none;
+}
+#sameEmailMessage {
+    font-weight: bold;
+    display: none;
+}
+#wrongLogin {
+    font-weight: bold;
+    color: red;
+    display: none;
+}
+.collapseLegend {
+    background-color: grey;
+}
+#wdwSimulation {
+    font-family: 'Syncopate', sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    display: none;
+}
+#txtLegend {
+    position: absolute;
+    text-align: left;
+    left: 92%;
+    display: none;
+    top: 15%;
+}
+#charts {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    left: 92%;
+    top: 40%;
+    display: none;
+}
+.helpQuestions {
+    font-weight: bold;
+}
+.panel-default {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 0px black;
+}
+#mapmap {
+    top: 15%;
+    left: 5%;
+    position: absolute;
+    width: 1600px;
+    height: 800px;
+    border: 5px solid black;
+    background-image: url(../images/world.png);
+    z-index: -1;
+    box-shadow: 5px 5px 5px 0px black;
+    display: none;
+}
+.person {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 10px;
+    border: 1px solid black;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+.plane {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 140px;
+    height: 70px;
+    background-image: url(images/heli.png);
+}
+.sick {
+    background-color: #c957d3;
+}
+.healthy {
+    background-color: #0cff00;
+}
+.army {
+    background-color: black;
+}
+.building {} .bunker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/basecamp.png);
+}
+.doctor {
+    background-color: #40E0D0;
+}
+.immune {
+    background-color: blue;
+}
+#sickLeg {
+    width: 15px;
+    height: 15px;
+    background-color: #c957d3;
+    border-radius: 50%;
+}
+#healthyLeg {
+    width: 15px;
+    height: 15px;
+    background-color: #0cff00;
+    border-radius: 50%;
+}
+#deadLeg {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+#doctorLeg {
+    width: 15px;
+    height: 15px;
+    background-color: #40E0D0;
+    border-radius: 50%;
+}
+#immuneLeg {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+}
